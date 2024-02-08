@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+       <attr name="black_always" format="reference" />
+       <attr name="white_always" format="reference" />
+    <attr name="blue_always" format="reference" />
+    <attr name="blue_to_black" format="reference" />
+    <attr name="black_to_white" format="reference" />
+    <attr name="text_gray_to_white" format="reference" />
+    <attr name="text_gray_to_black" format="reference" />
+    <attr name="white_to_black" format="reference" />
+    <attr name="light_gray_to_white" format="reference" />
+
+</resources>

@@ -2,8 +2,10 @@ package com.example.playlistmaker
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.LinearLayout
+import android.widget.Button
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.color.MaterialColors
 
 
 class MainActivity : AppCompatActivity() {
@@ -11,23 +13,26 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val button1 = findViewById<LinearLayout>(R.id.first_button)
-        val button2 = findViewById<LinearLayout>(R.id.second_button)
-        val button3 = findViewById<LinearLayout>(R.id.third_button)
-        //анонимный
-        button1.setOnClickListener{
-            val intent = Intent(this, ActivitySearch::class.java)
-            startActivity(intent)
-        }
-        //лямбда
-        button2.setOnClickListener {
-            val intent = Intent(this, ActivityMedia::class.java)
-            startActivity(intent)
+        window.statusBarColor = MaterialColors.getColor(
+            findViewById<View>(android.R.id.content).rootView, R.attr.blue_to_black        )
+
+
+        val searchButton = findViewById<Button>(R.id.search_button)
+        searchButton.setOnClickListener {
+            val searchIntent = Intent(this, ActivitySearch::class.java)
+            startActivity(searchIntent)
         }
 
-        button3.setOnClickListener {
-            val intent = Intent(this, SettingsActivity::class.java)
-            startActivity(intent)
+        val mediaButton = findViewById<Button>(R.id.media_library_button)
+        mediaButton.setOnClickListener {
+            val mediaIntent = Intent(this, ActivityMedia::class.java)
+            startActivity(mediaIntent)
+        }
+
+        val settingButton = findViewById<Button>(R.id.settings_button)
+        settingButton.setOnClickListener {
+            val settingsIntent = Intent(this, SettingsActivity::class.java)
+            startActivity(settingsIntent)
         }
     }
 }
