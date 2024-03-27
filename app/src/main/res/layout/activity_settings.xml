@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/white_to_black"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_4">
+
+        <ImageView
+            android:id="@+id/back_image"
+            style="@style/header_icon"
+            android:src="@drawable/arrow_back"
+            app:tint="?attr/black_to_white" />
+
+        <TextView
+            style="@style/text_style_header"
+            android:text="@string/settings_text" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_24">
+
+        <TextView
+            style="@style/settings_text"
+            android:text="@string/dark_mode_text" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_48"
+            android:layout_gravity="center|end"
+            android:checked="false"
+            android:gravity="center_vertical"
+            android:paddingVertical="@dimen/dp_11"
+            android:paddingStart="@dimen/dp_9"
+            android:paddingEnd="@dimen/dp_12"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/settings_text"
+            android:text="@string/share_text" />
+
+        <ImageView
+            android:id="@+id/share_image"
+            style="@style/settings_icon"
+            android:src="@drawable/share" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/settings_text"
+            android:text="@string/support_text" />
+
+        <ImageView
+            android:id="@+id/support_image"
+            style="@style/settings_icon"
+            android:src="@drawable/support" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/settings_text"
+            android:text="@string/agreement_text" />
+
+        <ImageView
+            android:id="@+id/agreement_image"
+            style="@style/settings_icon"
+            android:src="@drawable/agreement" />
+
+    </FrameLayout>
+
+
+</LinearLayout>
