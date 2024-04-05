@@ -18,4 +18,6 @@
     <string name="search_title">Поиск</string>
     <string name="email_address">sashasashka9064@yandex.ru</string>
     <string name="enter_a_request">Введите запрос</string>
+    <string name="album_cover">Обложка альбома</string>
+    <string name="the_button_to_go_to_the_track">Кнопка перехода на трек</string>
 </resources>
