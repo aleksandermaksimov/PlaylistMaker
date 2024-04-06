@@ -88,4 +88,15 @@
         <item name="android:lineHeight">@dimen/dp_19</item>
         <item name="android:textSize">@dimen/sp_16</item>
     </style>
+    
+    <style name="track_title">
+        <item name="android:textColor">?attr/black_to_white</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+    
+    <style name="text_underTitle">
+        <item name="android:textColor">?attr/black_to_white</item>
+        <item name="android:textSize">11sp</item>
+
+    </style>
 </resources>
